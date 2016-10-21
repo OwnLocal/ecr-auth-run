@@ -3,7 +3,7 @@ FROM alpine:3.4
 WORKDIR /root
 
 RUN apk update && apk upgrade && \
-    apk add py-pip docker && \
+    apk add py-pip && \
     rm -f /var/cache/apk/* && \
     pip install awscli --no-cache-dir
 

@@ -1,4 +1,4 @@
 #!/bin/sh
 
 $(aws ecr get-login)
-docker run "$@"
+/usr/bin/docker run "$@"
